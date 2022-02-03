@@ -9,7 +9,7 @@ public class UpDownWallMove : NetworkBehaviour
 {
 
     [SyncVar] public Vector3 currentPos;
-    private bool isUp = false;
+    [SerializeField] private bool isUp = false;
     private float speed = 0.003f;
 
     [ClientRpc]
